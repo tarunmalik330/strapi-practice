@@ -385,7 +385,6 @@ export interface ApiPeoplePeople extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     Email: Schema.Attribute.Email;
-    FirstName: Schema.Attribute.String;
     LastName: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -393,11 +392,8 @@ export interface ApiPeoplePeople extends Struct.CollectionTypeSchema {
       'api::people.people'
     > &
       Schema.Attribute.Private;
-    PhoneNumber: Schema.Attribute.Integer;
-    Photo: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
+    Name: Schema.Attribute.String;
+    Phone: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

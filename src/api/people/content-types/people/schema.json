@@ -11,28 +11,17 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "FirstName": {
+    "Name": {
       "type": "string"
     },
     "LastName": {
       "type": "string"
     },
-    "PhoneNumber": {
+    "Phone": {
       "type": "integer"
     },
     "Email": {
       "type": "email"
-    },
-    "Photo": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
     }
   }
 }
